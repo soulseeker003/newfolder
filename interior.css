@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 98%;
+    margin: auto;
+}
+nav{
+    background: #000;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+    padding: 20px;
+    min-width: 100px;
+    text-align: center;
+}
+.resmenu {
+    color: white;
+    display: none;
+}
+
+#menu{
+    display: none;
+}
+@media  only screen and (max-width: 800px){
+    .container{
+        width: 100%;
+
+    }
+ nav ul{
+    flex-direction: column;
+    display: none;
+    width: 100%;
+
+ }
+ nav ul li{
+    text-align: left;
+ }
+  
+.resmenu{
+    display: block;
+    padding: 20px;
+}
+#menu:checked ~ ul{
+    background: gray;
+    display: block;
+}
+}
